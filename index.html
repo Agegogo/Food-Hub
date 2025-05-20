@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="auth-section" class="container">
+        <h1>Welcome to Food Hub</h1>
+        <h2>Sign Up or Log In</h2>
+        <form id="auth-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" id="auth-button">Sign Up</button>
+        </form>
+        <p class="switch-mode">Already have an account? <span id="toggle-mode">Log In</span></p>
+    </div>
+
+    <div id="main-content" class="container hidden">
+        <h1>Welcome to Food Hub</h1>
+        <h2>Have Delicious Recipes</h2>
+
+        <div class="meal-cards">
+            <div class="meal-card" data-meal="Breakfast">
+                <div class="card-front">
+                    <img src="https://via.placeholder.com/130x130?text=Breakfast" alt="Breakfast">
+                </div>
+                <div class="card-back">
+                    <p>Breakfast</p>
+                </div>
+            </div>
+
+            <div class="meal-card" data-meal="Lunch">
+                <div class="card-front">
+                    <img src="https://via.placeholder.com/130x130?text=Lunch" alt="Lunch">
+                </div>
+                <div class="card-back">
+                    <p>Lunch</p>
+                </div>
+            </div>
+
+            <div class="meal-card" data-meal="Supper">
+                <div class="card-front">
+                    <img src="https://via.placeholder.com/130x130?text=Supper" alt="Supper">
+                </div>
+                <div class="card-back">
+                    <p>Supper</p>
+                </div>
+            </div>
+
+            <div class="meal-card" data-meal="Dessert">
+                <div class="card-front">
+                    <img src="https://via.placeholder.com/130x130?text=Dessert" alt="Dessert">
+                </div>
+                <div class="card-back">
+                    <p>Dessert</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="recipe-display">
+            <h2 id="recipe-title">Recipe Title</h2>
+            <img id="recipe-image" src="" alt="Recipe Image">
+            <p id="recipe-body">Recipe instructions will go here.</p>
+        </div>
+
+        <div id="search-results" class="meal-cards hidden">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
